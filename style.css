@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+body{
+    max-width: 1200px;
+    background-color: rgb(248, 240, 215);
+    margin: 80x auto;
+    font-family: "Bebas Neue", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    height: 100vh;
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.spotify-btn {
+    background: #FA8246;
+}
+
+.spotify-btn:hover {
+    background: #ce6b39;
+}
+
+img {
+    background: fixed;
+    width: 300px;
+    height: 300px; 
+    padding-left: 40px;
+}
+
+.container{
+    position: relative;
+    padding: 10px;
+}
+
+.container .song-info{
+    background-color: black;
+    margin: 0 15px;
+    padding: 15px 15px 5px 150px;
+    border-radius: 15px 15px 0 0;
+}
+
+.container .song-info .song-name{
+    color:aliceblue;
+    font-size: 20px;
+    margin: 3px 0 20px;
+}
+
+.container .song-info .artist-name{
+    color:rgb(255, 255, 255);
+    font-size: 14px;
+}
+
+.container .song-info .progress-bar{
+    background-color: rgb(63, 63, 62);
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.container .song-info .progress-bar .fill-bar{
+    width: 0%;
+    height: 6px;
+    border-radius: 20px;
+    background: #FA8246;;
+}
+
+.container .song-info .time{
+    font-size: 15px;
+    color: aliceblue;
+    margin: 10px 0;
+}
+
+.container .disk{
+    max-width: 120px;
+}
+
+.container .disk .active{
+    animation: rotate 3s linear 0s infinite forwards;
+}
+
+.container .disk .cover{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    bottom: 5px;
+    left: -150px;
+    background: url("stay\ with\ me.jpeg");
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: cover;
+    border: 3px solid #FA8246;;
+    border-radius: 50%;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease-in-out;
+}
+
+.container .disk .circle{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: -2%;
+    top: 29%;
+    background-color: #ce6b39;
+    border: solid 2px #FA8246;;
+    z-index: 1;
+    border-radius: 50%;
+}
+
+.container .controls{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background-color: #292929;
+    width: 450px;
+    height: 100px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+}
+
+.container .controls #play{
+    background-color:#FA8246;
+    color: #fff;
+    padding: 15px 15px 14px 17px;
+    font-size: 28px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.container .controls #play:hover{
+    background: #ce6b39;
+}
+
+.container .controls i{ 
+    padding: 30px 8px;
+    font-size: 35px;
+    cursor: pointer;
+    color: #919191;
+    transition: all 0.3s ease;
+}
+
+.container .controls i:hover{ 
+    color: #fff;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotateZ(0deg);
+    }
+    100% {
+        transform: rotateZ(360deg);
+    }
+}
